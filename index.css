@@ -1,0 +1,149 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+    list-style: none;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif,
+        Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Remove underline */
+a {
+    text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Navbar_style*/
+nav {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.08), 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.08);
+    position: fixed;
+    top: 0;
+}
+
+.navbar_container{
+    height: 4.75rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 0;
+}
+
+.navbar_logo img {
+    height: 3rem;
+}
+
+.navbar_menu_lang{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.navbars_menu{
+    display: flex;
+    gap: 1.4rem;
+    list-style: none;
+}
+.navbar_menu_item a{
+    color:black;
+}
+
+.navbar_menu_item a:hover{
+    color:rgb(209, 6, 6);
+    transition: 1s;
+    font-size: 1.6rem;
+}
+
+.navbar_lang{
+    gap: 0.25rem;
+    display: flex;
+    align-items: center;
+
+}
+.navbar_lang a{
+    color: black;
+    text-decoration: underline;
+}
+
+.navbar_lang a:hover{
+    color: red;
+    transition:1s;
+}
